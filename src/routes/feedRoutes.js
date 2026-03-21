@@ -4,6 +4,6 @@ const asyncHandler = require("../utils/asyncHandler");
 
 const router = express.Router();
 
-router.get("/feed", asyncHandler(feedController.getFeed));
+router.get("/feed", feedController.getFeed);
 
 module.exports = router;
